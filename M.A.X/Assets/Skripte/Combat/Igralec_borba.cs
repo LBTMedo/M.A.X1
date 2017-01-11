@@ -135,6 +135,7 @@ public class Igralec_borba : MonoBehaviour {
         else
         {
             instancaMetka.velocity = hitrostMetka * (-tockaZaStreljanje.right);
+            instancaMetka.transform.rotation = Quaternion.Euler(new Vector3(0f, 180f));
         }
 
         ammo.ZmanjsajSTMetkov(1, trenutniMetek);

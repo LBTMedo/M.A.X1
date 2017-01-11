@@ -19,9 +19,10 @@ public class UmiranjeZaga : MonoBehaviour
     void OnCollisionEnter2D(Collision2D coll)
     {
         Debug.Log("collider");
-        if (coll.gameObject.tag == "Player" && coll.gameObject.name == "Max")
+        if (coll.gameObject.tag == "Player")
         {
             coll.gameObject.SendMessage("PrejmiSkodo", 1000);
+            Destroy(gameObject);
         }
         else
         {

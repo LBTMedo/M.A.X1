@@ -24,7 +24,10 @@ public class PathFinding1 : MonoBehaviour {
     {
         while (true)
         {
-            FindPath(seeker.position, target.position);
+            if (seeker != null && target != null)
+            {
+                FindPath(seeker.position, target.position);
+            }
             yield return new WaitForSeconds(0.6f);
         }
     }

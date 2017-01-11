@@ -20,6 +20,10 @@ public class Metek : MonoBehaviour {
             coll.gameObject.SendMessage("PrejmiSkodo", damage);
             Destroy(gameObject);
         }
+        else if(coll.gameObject.tag == "Melee" || coll.gameObject.tag == "Tla")
+        {
+            return;
+        }
         else
         {
             Destroy(gameObject);

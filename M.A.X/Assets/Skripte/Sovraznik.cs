@@ -331,6 +331,9 @@ public class Sovraznik : MonoBehaviour
         sePremika = false;
 
         transform.Rotate(new Vector3(0, 0, 90));
+        GetComponent<BoxCollider2D>().isTrigger = true;
+        GetComponent<CircleCollider2D>().isTrigger = true;
+        GetComponent<Rigidbody2D>().isKinematic = true;
         Invoke("DestroyGO", casPredBrisanjem);
     }
 

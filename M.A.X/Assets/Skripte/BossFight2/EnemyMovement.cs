@@ -7,20 +7,30 @@ public class EnemyMovement : MonoBehaviour {
     [SerializeField]
     int index;
 
+    Igralec igralec;
+
     public Vector2[] path;
 
     public bool dead;
+
+    bool desno = true;
 
     private void Start()
     {
         index = 0;
         dead = false;
+        igralec = FindObjectOfType<Igralec>();
     }
 
     public void UpdatePath(Vector2[] _path)
     {
         path = _path;
         index = 0;
+    }
+
+    private void Update()
+    {
+        desno = (transform.position.x < igralec.gameObject.transform.position.x) ? true : false;
     }
 
     private void FixedUpdate()
@@ -33,6 +43,15 @@ public class EnemyMovement : MonoBehaviour {
             {
                 index++;
             }
+        }
+
+        if (desno)
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, 0f));
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(0f, 180f, 0f));
         }
     }
 }

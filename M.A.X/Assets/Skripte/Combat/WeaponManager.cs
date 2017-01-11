@@ -45,7 +45,11 @@ public class WeaponManager : MonoBehaviour {
 
     public static Transform VrniTrenutnoOrozje()
     {
-        return vsaOrozja[trenutnoOrozje].transform;
+        if(orozja.Count == 0)
+        {
+            return null;
+        }
+        return orozja[trenutnoOrozje].transform;
     }
 
     public static void ZamenjajOrozje()
