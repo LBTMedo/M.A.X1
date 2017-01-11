@@ -57,6 +57,11 @@ public class Igralec : MonoBehaviour {
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            GameManager.DodajDenar(10);
+        }
+
         if (!stop && Input.GetKeyDown(KeyCode.Escape))
         {
             endPanel.SetActive(true);
