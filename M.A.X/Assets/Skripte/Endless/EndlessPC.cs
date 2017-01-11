@@ -36,6 +36,7 @@ public class EndlessPC : MonoBehaviour {
 
     GenerateLevel generator;
 
+    Animator anim;
 
     public bool desno
     {
@@ -66,6 +67,7 @@ public class EndlessPC : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
         player = GetComponent<Igralec>();
         rbd = GetComponent<Rigidbody2D>();
@@ -101,6 +103,7 @@ public class EndlessPC : MonoBehaviour {
             {
                 Debug.Log("Space");
                 jump = true;
+                anim.SetFloat("speed", 0f);
             }
         }
         if (zacetek)
@@ -114,6 +117,10 @@ public class EndlessPC : MonoBehaviour {
                 moveSpeed += 1f;
             }
         }
+        else
+        {
+            anim.SetFloat("speed", 0f);
+        }
     }
 
     void FixedUpdate()
@@ -123,10 +130,22 @@ public class EndlessPC : MonoBehaviour {
         if (Grounded())
         {
             Jumps = originalJumps;
+            anim.SetBool("jump", false);
+            anim.SetFloat("speed", 1f);
+
         }
 
         if (jump && zacetek)
         {
+            if (Jumps == 1)
+            {
+                anim.SetBool("frontflip", true);
+            }
+            else
+            {
+                anim.SetBool("jump", true);
+            }
+
             source.PlayOneShot(zvok, 1F);
             rbd.velocity = new Vector2(rbd.velocity.x, jumpHeight);
             jump = false;

@@ -218,4 +218,9 @@ public class Igralec_borba : MonoBehaviour {
             hit.collider.gameObject.SendMessage("PrejmiSkodo", dmgObSkokuNaGlavo);
         }
     }
+
+    public void DodajMetke(int ammount)
+    {
+        ammo.PovecajSTMetkov(ammount, trenutniMetek);
+    }
 }

@@ -15,6 +15,8 @@ public class Sovraznik_Borba : MonoBehaviour {
     [SerializeField]
     private bool desno;
 
+    public bool umrl = false;
+
     public void Start()
     {
         sovraznik = GetComponent<Sovraznik>();
@@ -50,14 +52,10 @@ public class Sovraznik_Borba : MonoBehaviour {
 
     public void Streljanje()
     {
-        Rigidbody2D instancaMetka = Instantiate(metek, tockaZaStreljanje.position, tockaZaStreljanje.rotation) as Rigidbody2D;
-        //if (desno)
-        //{
-            instancaMetka.velocity = hitrostMetka * transform.right;
-       //}
-        /*else
+        if (!umrl)
         {
-            instancaMetka.velocity = hitrostMetka * (transform.right);
-        }*/
+            Rigidbody2D instancaMetka = Instantiate(metek, tockaZaStreljanje.position, tockaZaStreljanje.rotation) as Rigidbody2D;
+            instancaMetka.velocity = hitrostMetka * transform.right;
+        }
     }
 }

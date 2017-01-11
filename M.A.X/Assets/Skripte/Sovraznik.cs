@@ -200,9 +200,9 @@ public class Sovraznik : MonoBehaviour
                 FlipRayCast();
             }
             
-            Debug.DrawLine(transform.position, new Vector3(pozicijaX, dolzinaY), Color.red);
+            Debug.DrawLine(transform.position, new Vector3(pozicijaX, pogledKonec.position.y), Color.red);
 
-            if (Physics2D.Linecast(transform.position, new Vector3(pozicijaX, dolzinaY), 1 << LayerMask.NameToLayer("Igralec")))
+            if (Physics2D.Linecast(transform.position, new Vector3(pozicijaX, pogledKonec.position.y), 1 << LayerMask.NameToLayer("Igralec")))
             {
                 state = State.attacking;
                 sePremika = false;
@@ -327,8 +327,9 @@ public class Sovraznik : MonoBehaviour
             kovanec.AddForce(new Vector2(Random.Range(1, 4), Random.Range(1, 4)) * Random.Range(10,40));
         }
 
-        //StopCoroutine(streljanje);
         sePremika = false;
+
+        sistemZaBorbo.umrl = true;
 
         transform.Rotate(new Vector3(0, 0, 90));
         GetComponent<BoxCollider2D>().isTrigger = true;
