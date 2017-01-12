@@ -21,13 +21,17 @@ public class ZagePadajo : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-
+        Debug.Log("entered");
             if (other.tag == "Player" && ena)
             {
                 GenerateAndDropObjects();
                 ena = false;
-                return;
+               
             }
+            if(ena == false)
+        {
+            ena = true;
+        }
 
     }
 

@@ -21,7 +21,7 @@ public class UmiranjeZaga : MonoBehaviour
         Debug.Log("collider");
         if (coll.gameObject.tag == "Player")
         {
-            coll.gameObject.SendMessage("PrejmiSkodo", 1000);
+            coll.gameObject.SendMessage("PrejmiSkodo", 10);
             Destroy(gameObject);
         }
         else
