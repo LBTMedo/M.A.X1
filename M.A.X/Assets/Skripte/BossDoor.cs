@@ -30,6 +30,9 @@ public class BossDoor : MonoBehaviour {
     public IEnumerator Naprej()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(2);
+        GameControl.control.Save();
+        GameControl.control.SaveDefault();
+        GameControl.control.currentLevel = 2;
+        SceneManager.LoadScene(GameControl.control.currentLevel);
     }
 }

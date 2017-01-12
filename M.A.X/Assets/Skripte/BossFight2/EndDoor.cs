@@ -17,6 +17,9 @@ public class EndDoor : MonoBehaviour {
     public IEnumerator vrata()
     {
         yield return new WaitForSeconds(2);
+        GameControl.control.Save();
+        GameControl.control.SaveDefault();
+        GameControl.control.currentLevel = sceneIndex;
         SceneManager.LoadScene(sceneIndex);
     }
 }

@@ -24050,26 +24050,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &394375733 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011971574974, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
---- !u!114 &394375735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 394375733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c0b423383bd9a4eb4ee5c8d2e21163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 400
-  cena: 1500
-  ime: test3
-  handPoint: {fileID: 1727785981}
 --- !u!1 &394763274
 GameObject:
   m_ObjectHideFlags: 0
@@ -43720,11 +43700,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &707592301 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000011846332936, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
 --- !u!1 &707891466
 GameObject:
   m_ObjectHideFlags: 0
@@ -92479,26 +92454,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &1525663556 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013998893954, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
---- !u!114 &1525663558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525663556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c0b423383bd9a4eb4ee5c8d2e21163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 200
-  cena: 400
-  ime: test2
-  handPoint: {fileID: 707592301}
 --- !u!1 &1526325679
 GameObject:
   m_ObjectHideFlags: 0
@@ -101715,11 +101670,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &1676833775 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000011218159742, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
 --- !u!1 &1677737587
 GameObject:
   m_ObjectHideFlags: 0
@@ -104760,11 +104710,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &1727785981 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000014119758846, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
 --- !u!1 &1728844390
 GameObject:
   m_ObjectHideFlags: 0
@@ -124285,26 +124230,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &2037937599 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012718682918, guid: c6adf627ceeb46747819791fe3e18a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 715110497}
---- !u!114 &2037937601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2037937599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c0b423383bd9a4eb4ee5c8d2e21163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 200
-  cena: 500
-  ime: test1
-  handPoint: {fileID: 1676833775}
 --- !u!1 &2038494623
 GameObject:
   m_ObjectHideFlags: 0

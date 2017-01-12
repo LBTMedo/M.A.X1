@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CoopFinish : MonoBehaviour {
 
@@ -31,6 +32,9 @@ public class CoopFinish : MonoBehaviour {
         if (prvi && drugi)
         {
             Debug.Log("Konec.");
+            GameControl.control.Save();
+            GameControl.control.SaveDefault();
+            SceneManager.LoadScene(0);
         }
     }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CheckIfFinished : MonoBehaviour {
 
@@ -36,6 +37,9 @@ public class CheckIfFinished : MonoBehaviour {
                 if (pieces.full)
                 {
                     Debug.Log("All artefacts collected.");
+                    GameControl.control.Save();
+                    GameControl.control.SaveDefault();
+                    SceneManager.LoadScene(0);
                 }
             }
         }
