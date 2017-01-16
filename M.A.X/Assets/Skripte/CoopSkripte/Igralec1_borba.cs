@@ -114,7 +114,7 @@ public class Igralec1_borba : MonoBehaviour {
 
             Raycasting();
             desno = kontroler.desno;
-            trenutnoOrozje = WeaponManager.VrniTrenutnoOrozje().parent;
+            trenutnoOrozje = WeaponManager.VrniTrenutnoOrozje();
         }
     }
 

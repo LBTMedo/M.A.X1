@@ -15602,6 +15602,12 @@ Prefab:
       propertyPath: m_Name
       value: FlyingEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 114000014238379426, guid: d047f887fa6ae1641a6cecc538915dbc,
+        type: 2}
+      propertyPath: kovanecPrefab
+      value: 
+      objectReference: {fileID: 50000011009603992, guid: bd781459dfcbba74589b4308751aa813,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d047f887fa6ae1641a6cecc538915dbc, type: 2}
   m_IsPrefabParent: 0
