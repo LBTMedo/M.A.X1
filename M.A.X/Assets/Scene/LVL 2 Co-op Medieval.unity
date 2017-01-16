@@ -5588,6 +5588,48 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &195225347
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000014080188622, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a5186b2ef3bdc3541a0abd999bec7f79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &195525679
 Prefab:
   m_ObjectHideFlags: 0
@@ -43668,6 +43710,11 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_FontSize
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013423126674, guid: 93a4eb2776f9d5c49889649ef13af478,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93a4eb2776f9d5c49889649ef13af478, type: 2}
